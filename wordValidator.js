@@ -122,7 +122,7 @@ class WordValidator {
         return lastLetter === firstLetter;
     }
 
-    getWordsStartingWith(letter, difficulty = 'medium', maxResults = 50) {
+    getWordsStartingWith(letter, difficulty = 'medium', maxResults = Infinity) {
         if (!this.isLoaded) {
             return [];
         }
@@ -330,4 +330,5 @@ class WordValidator {
 }
 
 // Create global instance
+
 const wordValidator = new WordValidator();
