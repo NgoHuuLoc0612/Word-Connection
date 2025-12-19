@@ -472,12 +472,6 @@ class WordConnectionGame {
         
         this.switchTurn();
     }
-
-    shouldEndGame() {
-        // Game ends after 50 turns or if no valid words available
-        if (this.gameState.turnCount >= 50) {
-            return true;
-        }
         
         // Check if there are any valid words for the next letter
         if (this.gameState.wordChain.length > 0) {
@@ -607,3 +601,4 @@ document.addEventListener('DOMContentLoaded', () => {
     new WordConnectionGame();
 
 });
+
