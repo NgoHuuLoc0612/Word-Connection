@@ -414,8 +414,7 @@ class WordConnectionGame {
         
         const availableWords = wordValidator.getWordsStartingWith(
             nextLetter, 
-            this.gameState.difficulty, 
-            100
+            this.gameState.difficulty,
         );
         
         // Filter out used words
@@ -606,4 +605,5 @@ class WordConnectionGame {
 // Initialize game when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new WordConnectionGame();
+
 });
