@@ -332,3 +332,4 @@ class WordValidator {
 // Create global instance
 
 const wordValidator = new WordValidator();
+
